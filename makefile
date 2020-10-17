@@ -18,3 +18,6 @@ test/main.o:
 
 test/mytests.o:
 	gcc -c test/mytests.c -o test/mytests.o
+	
+runtest:
+	test.exe
