@@ -1,17 +1,14 @@
-#include "../functions.h"
-#include "../ctest.h" 
+#include <stdio.h>
+
 #define CTEST_MAIN
 
-CTEST(arithmetic_suite, simle_sum) { 
-// Given 
-const int a = 1; const int b = 2;
+#define CTEST_SEGFAULT
 
-// When 
+#include "ctest.h"
 
-const int result = sum(a, b); 
-// Then 
+int main(int argc, const char *argv[])
+{
+    int result = ctest_main(argc, argv);
 
-const int expected = 3; 
-ASSERT_EQUAL(expected, result); 
-
+    return result;
 }
