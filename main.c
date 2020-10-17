@@ -4,7 +4,8 @@
 
 
 int main() {
+  int i;
   printf("Hello, World!");
-system("pause");
+  scanf("&i",%d);
   
 }
