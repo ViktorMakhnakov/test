@@ -1,12 +1,15 @@
 all: prog test
 
-prog: main.o
-	gcc  main.o -o hello.exe
+prog: main.o functions.o
+	gcc  main.o functions.o -o hello.exe
 
-main.o: main.c
-	gcc   -c main.c
+main.o: 
+	gcc   -c main.c -o main.o
 
-test: test.o
-	gcc test.o -o test.exe
+functions.o: 
+	gcc   -c functions.c -o functions.o
+
+test: functions.o test.o
+	gcc test.o functions.o -o test.exe
 test.o: 
-	gcc -c test.c
+	gcc -c test.c test.o
