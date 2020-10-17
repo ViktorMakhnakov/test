@@ -12,4 +12,4 @@ functions.o:
 test: functions.o test.o
 	gcc test.o functions.o -o test.exe
 test.o: 
-	gcc -c test.c -o test.o
+	gcc -c test/main.c -o test.o
