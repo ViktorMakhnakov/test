@@ -9,7 +9,7 @@ main.o:
 functions.o: 
 	gcc   -c functions.c -o functions.o
 
-test: functions.o test.o
+test: test.o functions.o 
 	gcc test.o functions.o -o test.exe
 test.o: 
 	gcc -c test/main.c -o test.o
