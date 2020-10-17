@@ -1,4 +1,4 @@
-all: prog test
+all: prog
 
 prog: main.o functions.o
 	gcc  main.o functions.o -o hello.exe
