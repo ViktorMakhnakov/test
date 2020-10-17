@@ -1,5 +1,6 @@
 #include "functions.h"
 #include "ctest.h" 
+#include <assert.h> 
 
 CTEST(arithmetic_suite, simle_sum) { 
 // Given 
