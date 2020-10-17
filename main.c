@@ -8,7 +8,8 @@ int sum(int a, int b) {
 int main() {
   int i;
   printf("Hello, World!");
-  scanf("%d %d",&i,&x);
+  scanf("%d",&x);
+    scanf("%d",&i);
   printf("Hello, World!%d",sum(i,x)); 
     scanf("%d",&i);   
 }
