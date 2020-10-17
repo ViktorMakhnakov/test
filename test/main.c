@@ -2,7 +2,7 @@
 
 #define CTEST_MAIN
 
-#define CTEST_SEGFAULT
+//#define CTEST_SEGFAULT
 
 #include "ctest.h"
 
