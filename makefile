@@ -6,3 +6,7 @@ prog: main.o
 main.o: main.c
 	gcc   -c main.c
 
+test: test.o
+	gcc test.o -o test
+test.o: 
+	gcc -c test.c
